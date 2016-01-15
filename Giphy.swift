@@ -8,3 +8,8 @@
 
 import Foundation
 
+public class Giphy {
+    
+    public static var APIKey: String?
+    
+}
