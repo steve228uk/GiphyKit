@@ -11,7 +11,7 @@ import Foundation
 public struct GiphyImage {
     
     /// Height of the image
-    public var height: String?
+    public var height: Int?
     
     /// URL to the MP4 version
     public var mp4: String?
@@ -32,6 +32,6 @@ public struct GiphyImage {
     public var webpSize: String?
     
     /// Width of the image
-    public var width: String?
+    public var width: Int?
     
 }

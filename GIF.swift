@@ -66,8 +66,16 @@ extension Giphy {
             if let image = images["original"]?.dictionary {
                 
                 var img = GiphyImage()
-                img.height = image["height"]?.string
-                img.width = image["width"]?.string
+                if let height = image["height"]?.string {
+                    img.height = Int(height)
+                } else if let height = image["height"]?.int {
+                    img.height = height
+                }
+                if let width = image["width"]?.string {
+                    img.width = Int(width)
+                } else if let width = image["width"]?.int {
+                    img.width = width
+                }
                 img.mp4 = image["mp4"]?.string
                 img.mp4Size = image["mp4_size"]?.string
                 img.size = image["size"]?.string
