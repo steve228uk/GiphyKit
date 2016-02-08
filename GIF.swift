@@ -12,13 +12,13 @@ import SwiftyJSON
 
 public struct GIF {
 
-    var id: String?
+    public var id: String?
     
-    var bitlyURL: String?
+    public var bitlyURL: String?
     
-    var bitlyGIFURL: String?
+    public var bitlyGIFURL: String?
     
-    var images: [GiphyImage] = []
+    public var images: [GiphyImage] = []
     
 }
 
